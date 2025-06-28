@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Demo</title>
+</head>
+<body>
+  <h1 id="main-heading">Hello</h1>
+
+  <p>First paragraph.</p>
+  <p>Second paragraph.</p>
+  <p>Third paragraph.</p>
+
+  <div class="container">
+    <p>Inside container.</p>
+  </div>
+
+  <script>
+    document.getElementById("main-heading").textContent = "Welcome to the DOM World!";
+    let paragraphs = document.getElementsByTagName("p");
+    for(let i = 0; i < paragraphs.length; i++) {
+      paragraphs[i].style.color = "blue";
+    }
+    document.querySelector(".container").style.backgroundColor = "yellow";
+  </script>
+</body>
+</html>
